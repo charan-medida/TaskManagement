@@ -1,0 +1,310 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px; 
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+
+}
+.input-field {
+ 
+  max-width: 500px; 
+  margin-bottom: 1rem;
+}
+
+
+.title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.button-container {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  z-index: 1000; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0; 
+  width: 150%;
+  max-width: 500px; 
+  background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+
+.form h2{
+  font-family: sans-serif;
+  text-align: center;
+  color: orange;
+  font-size: 22px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input{
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid orange;
+  border-radius: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  padding-left: 10px;
+}
+.form input:focus{
+  outline: none;
+}
+
+::placeholder{
+  color: white;
+  font-family: Arial;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.container{
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+  width: 300px;
+  display: grid;
+  place-items: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    top: 5px; 
+    right: 5px; 
+  }
+ 
+  .title-container {
+    padding: 2px;
+  }
+  
+  .form {
+    width: 95%; /* Adjust form width for smaller screens */
+  }
+  
+  .form h2 {
+    font-size: 1.25rem; /* Adjusted font size for smaller screens */
+  }
+
+  .form input {
+    font-size: 0.875rem; /* Adjusted font size for smaller screens */
+  }
+
+  .navbar {
+    width: 100%; /* Full width for mobile screens */
+    height: auto;
+  }
+
+  .formtask {
+    width: 90%; /* Adjusted for smaller screens */
+    height: auto; /* Adjusted height */
+    bottom: 20px; /* Adjusted position */
+    left: 5%;
+  }
+
+  .formtable {
+    width: 90%; /* Adjusted for smaller screens */
+    max-width: 100%; /* Full width */
+    left: 5%;
+    bottom: 20px; /* Adjusted position */
+  }
+}
+
+
+
+
+.left-align{
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.h1 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+button{
+  padding: 5px;
+  margin: 4px;
+}
+
+.App h1{
+    font-size: 36px;
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar{
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+.fullscreen-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.formtask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0; 
+  width: 400px;
+  max-width: 500px;
+  height: 500px;
+  background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  position: absolute;
+  bottom: 70px;
+  left: 100px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.formtask h2{
+  font-family: sans-serif;
+  text-align: center;
+  color: orange;
+  font-size: 22px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.formtask input{
+  width: 100%; 
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid orange;
+  border-radius: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.formtask input:focus{
+  outline: none;
+}
+
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Danger button color */
+}
+
+.formtable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0; 
+  width: 1000px;
+  max-width: 5000px; 
+  height: 480px;
+  position: absolute;
+  bottom: 100px;
+  left:500px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.table-container {
+  
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: auto;
+}
+
+.table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.td{
+  border: 1px solid orange;
+  text-align: left;
+  padding: 8px;
+ 
+}
+.th{
+  border: 1px solid orange;
+  text-align: left;
+  padding: 8px;
+  
+} 
+.tr:nth-child(even) {
+  background-color: 'black';
+}
